@@ -7,6 +7,7 @@
     <title>QuickBite</title>
     <link rel="stylesheet" href="assets/css/stlye.css">
     <link rel="shortcut icon" href="assets/img/Web LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     
 </head>
 
@@ -26,6 +27,9 @@
             <button>Bejelentkezés</button>
         </nav>
     </header>
+
+    
+    
 
     <!-- Hero szekció -->
     <main>
@@ -56,11 +60,15 @@
                     </div>
                     <div class="flip-back">
                         <div class="container map-card">
-                            <div class="map-header"><span class="face-label" style="color:inherit">Térkép</span> (demó)</div>
-                            <img class="map-image" src="assets/img/dummyterkepek/Lángoló Rostély Térkép.webp" alt="Demó térkép">
-                            <div style="text-align:center; padding: 12px 16px 18px;">
-                                <button id="mapBack" class="map-toggle">Vissza</button>
+                            <div class="map-header">
+                                <span class="face-label" style="color:inherit">Térkép</span> (demó)
                             </div>
+                    
+                            <!-- Vissza gomb -->
+                            <button id="mapBack" class="map-toggle">Vissza</button>
+                    
+                            <!-- Leaflet térkép -->
+                            <div id="map" style="height: 400px; width: 100%; margin-top: 12px;"></div>
                         </div>
                     </div>
                 </div>
@@ -98,6 +106,7 @@
     </footer>
 
     <script src="assets/js/index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 
 </html>
