@@ -93,7 +93,10 @@ header .logo {
     font-weight: 800;
     letter-spacing: .2px;
     color: var(--color-accent);
+    width: 300px;
+    
 }
+
 
 header .search-bar {
     display: flex;
@@ -122,6 +125,13 @@ header nav {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+header nav .nav-icon {
+    width: 28px;   
+    height: 28px;  
+    object-fit: contain;
+    display: block;
 }
 
 header nav a {
@@ -428,3 +438,4 @@ footer h2 {
         transition: none !important;
     }
 }
+
