@@ -93,7 +93,7 @@ header .logo {
     font-weight: 800;
     letter-spacing: .2px;
     color: var(--color-accent);
-    width: 300px;
+    width: 133px;
     
 }
 
@@ -101,7 +101,7 @@ header .logo {
 header .search-bar {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
 }
 
 header .search-bar input {
