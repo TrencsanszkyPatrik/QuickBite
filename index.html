@@ -15,7 +15,7 @@
     <header>
         <div class="logo">
             <img class="logo-img" src="assets/img/Web LOGO.jpg" alt="QuickBite logó">
-            <span class="brand-text">QuickBite</span>
+            <span class="brand-text">QuickBite - Gyorsan, pontosan!</span>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Keress éttermeink közül" style="width: 100%;">
@@ -30,21 +30,39 @@
     <!-- Hero szekció -->
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repudiandae minima dolorem cumquecommodi eaque.</p>
+            <div class="flip-card" id="heroCard">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <div class="container">
+                            <div class="face-label">Keresés</div>
+                            <h1>QuickBite. Ne várj, falatozz most!</h1>
+                            <p>Fedezd fel a környék legjobb ízeit, rendelj pár kattintással, és élvezd frissen, perceken belül.</p>
 
-                <div class="search-section">
-                    <input type="text" placeholder="Add meg a címed">
-                    <input type="text" placeholder="Keress éttermeinkre, vagy egy adott ételre">
-                    <button>Keresés</button>
-                </div>
+                            <div class="search-section">
+                                <input type="text" placeholder="Add meg a címed">
+                                <input type="text" placeholder="Keress éttermeinkre, vagy egy adott ételre">
+                                <button>Keresés</button>
+                            </div>
 
-                <div class="categories">
-                    <button>Pizza</button>
-                    <button>Burger</button>
-                    <button>Sushi</button>
-                    <button>Mexikói</button>
+                            <div class="categories">
+                                <button>Pizza</button>
+                                <button>Burger</button>
+                                <button>Sushi</button>
+                                <button>Mexikói</button>
+                            </div>
+
+                            <button id="mapToggle" class="map-toggle" style="margin-top:12px;">Tovább a térképre</button>
+                        </div>
+                    </div>
+                    <div class="flip-back">
+                        <div class="container map-card">
+                            <div class="map-header"><span class="face-label" style="color:inherit">Térkép</span> (demó)</div>
+                            <img class="map-image" src="assets/img/dummyterkepek/Lángoló Rostély Térkép.webp" alt="Demó térkép">
+                            <div style="text-align:center; padding: 12px 16px 18px;">
+                                <button id="mapBack" class="map-toggle">Vissza</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -78,6 +96,8 @@
             </p>
         </div>
     </footer>
+
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
