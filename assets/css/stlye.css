@@ -89,13 +89,9 @@ header {
     padding: 14px clamp(16px, 3vw, 28px);
 }
 
-header .logo {
-    font-weight: 800;
-    letter-spacing: .2px;
-    color: var(--color-accent);
-    width: 133px;
-    
-}
+header .logo { display: flex; align-items: center; gap: 10px; }
+header .logo .logo-img { width: 132px; height: 132px; object-fit: contain; display: block; border-radius: 6px; }
+header .logo .brand-text { font-weight: 800; color: var(--color-accent); font-size: x-large;}
 
 
 header .search-bar {
