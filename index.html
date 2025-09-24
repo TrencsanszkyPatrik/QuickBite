@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite</title>
+    <style>
+        /* Ideiglenes elrendezeseknek, majd hivd meg a style-t, amit csinaltal */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        header {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+
+        .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 10px;
+        }
+
+        .search-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            border-top: 1px solid #ccc;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-copy {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fejléc -->
+    <header>
+        <div class="logo">QuickBite - Rendelj gyorsan!</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Keress éttermeink közül" style="width: 100%;">
+        </div>
+        <nav>
+            <a href="#">Kosár</a>
+            <a href="#">Fiók</a>
+            <button>Bejelentkezés</button>
+        </nav>
+    </header>
+
+    <!-- Hero szekció -->
+    <main>
+        <section class="hero">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repudiandae minima dolorem cumquecommodi eaque.</p>
+
+            <div class="search-section">
+                <input type="text" placeholder="Add meg a címed">
+                <input type="text" placeholder="Keress éttermeinkre, vagy egy adott ételre">
+                <button>Keresés</button>
+            </div>
+
+            <div class="categories">
+                <button>Pizza</button>
+                <button>Burger</button>
+                <button>Sushi</button>
+                <button>Mexikói</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Alsó rész -->
+    <section style="text-align: center; padding: 40px 20px;">
+        <h2>Miért válaszd a QuickBite-ot?</h2>
+        <p>Itt majd felsorolás lehet a fő előnyökről...</p>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h2>QuickBite</h2>
+
+            <nav class="footer-nav">
+                <a href="#">Főoldal</a>
+                <a href="#">Rólunk</a>
+                <a href="#">Éttermek</a>
+                <a href="#">Kapcsoalt</a>
+            </nav>
+
+            <div class="footer-socials">
+                <a href="#">X</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+
+            <p class="footer-copy">
+                © 2025 QuickBite. Minden jog fenttartva.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
