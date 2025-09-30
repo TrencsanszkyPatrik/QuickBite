@@ -1,112 +1,161 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickBite</title>
-    <link rel="stylesheet" href="assets/css/stlye.css">
-    <link rel="shortcut icon" href="assets/img/Web LOGO.jpg" type="image/x-icon">
+    <title>QuickBite - Étel házhozszállítás</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    
+    <link rel="stylesheet" href="assets/css/stlye.css">
 </head>
-
 <body>
-    <!-- Fejléc -->
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <img class="logo-img" src="assets/img/Web LOGO.jpg" alt="QuickBite logó">
-            <span class="brand-text">QuickBite - Gyorsan, pontosan!</span>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Keress éttermeink közül" style="width: 100%;">
-        </div>
-        <nav>
-            <a href="#"><img class="nav-icon" src="assets/img/kosár.png" alt="Kosár">Kosár</a>
-            <a href="#"><img class="nav-icon" src="assets/img/fiok.png" alt="">Fiók</a>
-            <button>Bejelentkezés</button>
-        </nav>
-    </header>
-
-    
-    
-
-    <!-- Hero szekció -->
-    <main>
-        <section class="hero">
-            <div class="flip-card" id="heroCard">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <div class="container">
-                            <div class="face-label">Keresés</div>
-                            <h1>QuickBite. Ne várj, falatozz most!</h1>
-                            <p>Fedezd fel a környék legjobb ízeit, rendelj pár kattintással, és élvezd frissen, perceken belül.</p>
-
-                            <div class="search-section">
-                                <input type="text" placeholder="Add meg a címed">
-                                <input type="text" placeholder="Keress éttermeinkre, vagy egy adott ételre">
-                                <button>Keresés</button>
-                            </div>
-
-                            <div class="categories">
-                                <button>Pizza</button>
-                                <button>Burger</button>
-                                <button>Sushi</button>
-                                <button>Mexikói</button>
-                            </div>
-
-                            <button id="mapToggle" class="map-toggle" style="margin-top:12px;">Tovább a térképre</button>
-                        </div>
-                    </div>
-                    <div class="flip-back">
-                        <div class="container map-card">
-                            <div class="map-header">
-                                <span class="face-label" style="color:inherit">Térkép</span> (demó)
-                            </div>
-                    
-                            <!-- Vissza gomb -->
-                            <button id="mapBack" class="map-toggle">Vissza</button>
-                    
-                            <!-- Leaflet térkép -->
-                            <div id="map" style="height: 400px; width: 100%; margin-top: 12px;"></div>
-                        </div>
-                    </div>
+        <div class="header-content">
+            <div class="logo">
+                <img class="logo-img" src="assets/img/Web LOGO.jpg" alt="QuickBite logó">
+                <span>QuickBite</span>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Keress étteremre vagy ételre...">
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="header-actions">
+                <button class="btn btn-secondary">🛒 Kosár</button>
+                <button class="btn btn-primary">Bejelentkezés</button>
+            </div>
+        </div>
+    </header>
 
-    <!-- Alsó rész -->
-    <section style="text-align: center; padding: 40px 20px;">
-        <h2>Miért válaszd a QuickBite-ot?</h2>
-        <p>Itt majd felsorolás lehet a fő előnyökről...</p>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <h2>QuickBite</h2>
-
-            <nav class="footer-nav">
-                <a href="#">Főoldal</a>
-                <a href="#">Rólunk</a>
-                <a href="#">Éttermek</a>
-                <a href="#">Kapcsoalt</a>
-            </nav>
-
-            <div class="footer-socials">
-                <a href="#">X</a>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Éhes vagy? Rendelj most! 🚀</h1>
+            <p>Fedezd fel a környék legjobb éttermeit és élvezd a gyors kiszállítást.</p>
+            
+            <div class="hero-search">
+                <input type="text" placeholder="📍 Add meg a címed">
+                <input type="text" placeholder="🍕 Mit keresel?">
+                <button class="btn btn-primary">Keresés</button>
             </div>
 
-            <p class="footer-copy">
-                © 2025 QuickBite. Minden jog fenttartva.
-            </p>
+            <div class="categories-pills">
+                <div class="pill">🍕 Pizza</div>
+                <div class="pill">🍔 Burger</div>
+                <div class="pill">🍣 Sushi</div>
+                <div class="pill">🌮 Mexikói</div>
+                <div class="pill">🍝 Tészta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="container">
+        <div class="map-section">
+            <div class="map-header">📍 Közelben lévő éttermek</div>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- Benefits -->
+    <div class="container">
+        <div class="benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon">⭐</div>
+                <h3>Legjobb éttermek</h3>
+                <p>Csak ellenőrzött, magas minőségű éttermekkel dolgozunk. Minden vendéglátóhely megfelel a legszigorúbb követelményeknek.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h3>Villámgyors szállítás</h3>
+                <p>30 percen belül kiszállítjuk az ételedet. Valós idejű követéssel mindig tudod, hol jár a futár.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💳</div>
+                <h3>Biztonságos fizetés</h3>
+                <p>Fizetés készpénzzel, bankkártyával vagy online. Minden tranzakció biztonságos és védett.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cuisines -->
+    <div class="container">
+        <h2 class="section-title">Böngéssz konyhatípus szerint</h2>
+        <div class="cuisines-grid">
+            <a href="#" class="cuisine-card">
+                <div class="cuisine-icon">🍝</div>
+                <span class="cuisine-title">Olasz</span>
+                <span class="cuisine-meta">23 étterem</span>
+            </a>
+            <a href="#" class="cuisine-card">
+                <div class="cuisine-icon">🍜</div>
+                <span class="cuisine-title">Ázsiai</span>
+                <span class="cuisine-meta">31 étterem</span>
+            </a>
+            <a href="#" class="cuisine-card">
+                <div class="cuisine-icon">🌮</div>
+                <span class="cuisine-title">Mexikói</span>
+                <span class="cuisine-meta">18 étterem</span>
+            </a>
+            <a href="#" class="cuisine-card">
+                <div class="cuisine-icon">🍔</div>
+                <span class="cuisine-title">Amerikai</span>
+                <span class="cuisine-meta">27 étterem</span>
+            </a>
+            <a href="#" class="cuisine-card">
+                <div class="cuisine-icon">🍛</div>
+                <span class="cuisine-title">Indiai</span>
+                <span class="cuisine-meta">15 étterem</span>
+            </a>
+            <a href="#" class="cuisine-card">
+                <div class="cuisine-icon">🥙</div>
+                <span class="cuisine-title">Mediterrán</span>
+                <span class="cuisine-meta">12 étterem</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickBite</h3>
+                <p>A leggyorsabb és legmegbízhatóbb ételkiszállítási szolgáltatás a városban. Rendelj percek alatt!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Linkek</h3>
+                <div class="footer-links">
+                    <a href="#">Főoldal</a>
+                    <a href="#">Éttermek</a>
+                    <a href="#">Rólunk</a>
+                    <a href="#">Kapcsolat</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Jogi</h3>
+                <div class="footer-links">
+                    <a href="#">ÁSZF</a>
+                    <a href="#">Adatvédelem</a>
+                    <a href="#">Cookie-k</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Közösségi média</h3>
+                <div class="footer-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 QuickBite. Minden jog fenntartva.
         </div>
     </footer>
 
-    <script src="assets/js/index.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-</body>
+    <script src="assets/js/index.js"></script>
 
+</body>
 </html>
