@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite - Étel házhozszállítás</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/kosar.css"> <!-- Corrected 'stlye.css' to 'style.css' -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img class="logo-img" src="assets/img/LOGO/Web LOGO.jpg" alt="QuickBite logó">
+                <a href="index.html"><span>QuickBite</span></a>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Keress étteremre vagy ételre...">
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-secondary">🛒 Kosár <span class="cart-count">2</span></button>
+                <a href="login.html"><button class="btn btn-primary">Bejelentkezés</button></a>
+            </div>
+        </div>
+    </header>
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="cart-item-image"></div>
+                <div class="cart-item-details">
+                    <h3>Mario's Pizzeria</h3>
+                    <p>Margherita Pizza</p>
+                    <p class="price">$18.99</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <button class="quantity-btn">-</button>
+                    <input type="text" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+                    <span class="cart-item-remove">🗑️</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-image"></div>
+                <div class="cart-item-details">
+                    <h3>Sakura Sushi</h3>
+                    <p>California Roll</p>
+                    <p class="price">$12.50</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <button class="quantity-btn">-</button>
+                    <input type="text" value="2" readonly>
+                    <button class="quantity-btn">+</button>
+                    <span class="cart-item-remove">🗑️</span>
+                </div>
+            </div>
+        </div>
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p>Subtotal: $43.99</p>
+            <p>Delivery fee: $3.99</p>
+            <p>Tax: $3.52</p>
+            <p class="total">Total: $51.50</p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickBite</h3>
+                <p>A leggyorsabb és legmegbízhatóbb ételkiszállítási szolgáltatás a városban. Rendelj percek alatt!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Linkek</h3>
+                <div class="footer-links">
+                    <a href="#">Főoldal</a>
+                    <a href="#">Éttermek</a>
+                    <a href="#">Rólunk</a>
+                    <a href="#">Kapcsolat</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Jogi</h3>
+                <div class="footer-links">
+                    <a href="#">ÁSZF</a>
+                    <a href="#">Adatvédelem</a>
+                    <a href="#">Cookie-k</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Közösségi média</h3>
+                <div class="footer-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 QuickBite. Minden jog fenntartva.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
