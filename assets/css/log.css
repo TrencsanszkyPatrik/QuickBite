@@ -82,11 +82,11 @@ body {
     cursor: pointer;
     font-size: 14px;
     flex: 1;
-    background-color: #FEFCFD; /* Default to white */
+    background-color: #FEFCFD;
 }
 .buttons button.active {
-    background-color: #5D5D81; /* Dark purple for active button */
-    color: #FEFCFD; /* White text for contrast */
+    background-color: #5D5D81;
+    color: #FEFCFD;
 }
 .buttons button.login {
     border-right: 1px solid #000505;
