@@ -93,7 +93,7 @@ body {
 }
 .create-account {
     background-color: #5D5D81;
-    color: #000505;
+    color: #FEFCFD;
     padding: 12px 25px;
     border: none;
     border-radius: 6px;
@@ -101,3 +101,4 @@ body {
     width: 100%;
     font-size: 16px;
 }
+
