@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEFCFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.back-link {
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 80px;
+    margin-right: 40px;
+    height: 50px;
+}
+.back-link button {
+    background: none;
+    border: none;
+    color: #000505;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}
+.container {
+    background-color: #BFCDE0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #D4DCE8;
+    text-align: center;
+    width: 400px;
+}
+.container h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #000505;
+}
+.container p {
+    font-size: 16px;
+    color: #000505;
+    margin-bottom: 25px;
+}
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #000505;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D4DCE8;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form-group input::placeholder {
+    color: #000505;
+    opacity: 0.4;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    background-color: #5D5D81;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #000505;
+}
+.buttons button {
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1;
+    background-color: #FEFCFD; /* Default to white */
+}
+.buttons button.active {
+    background-color: #5D5D81; /* Dark purple for active button */
+    color: #FEFCFD; /* White text for contrast */
+}
+.buttons button.login {
+    border-right: 1px solid #000505;
+}
+.create-account {
+    background-color: #5D5D81;
+    color: #000505;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
